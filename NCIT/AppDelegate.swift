@@ -1,7 +1,7 @@
 //
 //  AppDelegate.swift
 //  NCIT
-//
+//  NonCornanoITontiApp
 //  Created by Matteo Bellinaso on 02/05/2020.
 //  Copyright © 2020 Matteo Bellinaso. All rights reserved.
 //
