@@ -11,12 +11,12 @@
 		9EA3690F245DA32E00F635E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA3690E245DA32E00F635E0 /* Assets.xcassets */; };
 		9EA36912245DA32E00F635E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA36910245DA32E00F635E0 /* LaunchScreen.storyboard */; };
 		9EA3691A245DAA7E00F635E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EA36919245DAA7E00F635E0 /* GoogleService-Info.plist */; };
-		9EA3691C245DAD6900F635E0 /* DaoGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3691B245DAD6900F635E0 /* DaoGeneric.swift */; };
-		9EA3691E245DBA6D00F635E0 /* Authetication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3691D245DBA6D00F635E0 /* Authetication.swift */; };
+		9EA3691C245DAD6900F635E0 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3691B245DAD6900F635E0 /* FirebaseHelper.swift */; };
 		9EA36923245DBC3900F635E0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA36922245DBC3900F635E0 /* LoginViewController.swift */; };
 		9EA36925245DBC7000F635E0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA36924245DBC7000F635E0 /* SignUpViewController.swift */; };
 		9EA36929245DC2BB00F635E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA36928245DC2BB00F635E0 /* HomeViewController.swift */; };
 		9EA3692B245DCD8000F635E0 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA3692A245DCD8000F635E0 /* Main2.storyboard */; };
+		9EA3692D245DD35800F635E0 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA3692C245DD35800F635E0 /* Utility.swift */; };
 		F6C801B25488BB57C6BF864A /* Pods_NCIT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66859B5EBD082E07E9EF7989 /* Pods_NCIT.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,12 +29,12 @@
 		9EA36911245DA32E00F635E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EA36913245DA32E00F635E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EA36919245DAA7E00F635E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9EA3691B245DAD6900F635E0 /* DaoGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoGeneric.swift; sourceTree = "<group>"; };
-		9EA3691D245DBA6D00F635E0 /* Authetication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authetication.swift; sourceTree = "<group>"; };
+		9EA3691B245DAD6900F635E0 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		9EA36922245DBC3900F635E0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9EA36924245DBC7000F635E0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9EA36928245DC2BB00F635E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9EA3692A245DCD8000F635E0 /* Main2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
+		9EA3692C245DD35800F635E0 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		E6187CD16B679B5D900BE149 /* Pods-NCIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCIT.release.xcconfig"; path = "Target Support Files/Pods-NCIT/Pods-NCIT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,10 +93,10 @@
 				9EA36910245DA32E00F635E0 /* LaunchScreen.storyboard */,
 				9EA36913245DA32E00F635E0 /* Info.plist */,
 				9EA36919245DAA7E00F635E0 /* GoogleService-Info.plist */,
-				9EA3691B245DAD6900F635E0 /* DaoGeneric.swift */,
+				9EA3691B245DAD6900F635E0 /* FirebaseHelper.swift */,
 				9EA3691F245DBBCB00F635E0 /* ViewControllers */,
-				9EA3691D245DBA6D00F635E0 /* Authetication.swift */,
 				9EA3692A245DCD8000F635E0 /* Main2.storyboard */,
+				9EA3692C245DD35800F635E0 /* Utility.swift */,
 			);
 			path = NCIT;
 			sourceTree = "<group>";
@@ -246,11 +246,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA36925245DBC7000F635E0 /* SignUpViewController.swift in Sources */,
-				9EA3691E245DBA6D00F635E0 /* Authetication.swift in Sources */,
 				9EA36908245DA32C00F635E0 /* AppDelegate.swift in Sources */,
+				9EA3692D245DD35800F635E0 /* Utility.swift in Sources */,
 				9EA36923245DBC3900F635E0 /* LoginViewController.swift in Sources */,
 				9EA36929245DC2BB00F635E0 /* HomeViewController.swift in Sources */,
-				9EA3691C245DAD6900F635E0 /* DaoGeneric.swift in Sources */,
+				9EA3691C245DAD6900F635E0 /* FirebaseHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
